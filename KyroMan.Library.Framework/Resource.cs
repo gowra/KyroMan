@@ -10,5 +10,7 @@
         {
             Name = name;
         }
+
+        public User AllocatedUser { get; }
     }
 }
