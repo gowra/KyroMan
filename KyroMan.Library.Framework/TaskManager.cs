@@ -15,7 +15,7 @@ namespace KyroMan.Library.Framework
 
         public Task FindTaskById(int id) => throw new NotImplementedException();
 
-        public Task CreateTask(string title, string description, string createdBy) => throw new NotImplementedException();
+        public Task CreateTask(string title, string description, User createdBy) => throw new NotImplementedException();
 
         public void DeleteTask(int id) => throw new NotImplementedException();
     }

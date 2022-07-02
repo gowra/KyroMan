@@ -1,12 +1,16 @@
-﻿namespace KyroMan.Library.Framework
+﻿using System.Collections.Generic;
+
+namespace KyroMan.Library.Framework
 {
     public class Task : Entity
     {
-        internal Task() : this(string.Empty, string.Empty, string.Empty)
+        private HashSet<Task> dependentTasks;
+
+        internal Task() : this(string.Empty, string.Empty, null)
         { 
         }
 
-        internal Task(string title, string description, string createdBy) : base()
+        internal Task(string title, string description, User createdBy) : base()
         {
             Title = title;
             Description = description;
@@ -17,8 +21,16 @@
 
         public string Description { get; set; }
 
-        public string CreatedBy { get; }
+        public User CreatedBy { get; }
 
         public int Estimate { get; set; }
+
+        public User AssignedTo { get; set; }
+
+        public Role RequiredRole { get; set; }
+
+        public Resource RequiredResource { get; set; }
+
+        public IEnumerable<Task> DependentTasks => this.dependentTasks;
     }
 }

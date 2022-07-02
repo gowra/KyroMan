@@ -25,5 +25,7 @@ namespace KyroMan.Library.Framework
         public UserManager Users { get; }
 
         public ResourceManager Resources { get; }
+
+        public Scheduler Scheduler { get; }
     }
 }
