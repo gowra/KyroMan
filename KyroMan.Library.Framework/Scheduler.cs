@@ -5,12 +5,23 @@ namespace KyroMan.Library.Framework
 {
     public class Scheduler
     {
-        internal Scheduler()
+        private readonly TaskManager taskManager;
+        private readonly UserManager userManager;
+        private readonly ResourceManager resourceManager;
+
+        internal Scheduler(TaskManager taskManager, UserManager userManager, ResourceManager resourceManager)
         {
+            this.taskManager = taskManager;
+            this.userManager = userManager;
+            this.resourceManager = resourceManager;
         }
 
         public void AssignTask(Task task, User user) => throw new NotImplementedException();
 
         public void AllocateResource(Task task, Resource resource) => throw new NotImplementedException();
+
+        public IEnumerable<Task> GetTasks(User user) => throw new NotImplementedException();
+
+        public IEnumerable<Task> GetTasks(Status status) => throw new NotImplementedException();
     }
 }
