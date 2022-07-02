@@ -19,5 +19,7 @@ namespace KyroMan.Library.Framework
         public string Description { get; set; }
 
         public int DurationInDays { get; }
+
+        public TaskManager TaskManager { get; }
     }
 }

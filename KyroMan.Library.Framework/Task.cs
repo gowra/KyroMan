@@ -18,5 +18,7 @@
         public string Description { get; set; }
 
         public string CreatedBy { get; }
+
+        public int Estimate { get; set; }
     }
 }
