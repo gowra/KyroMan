@@ -23,5 +23,7 @@ namespace KyroMan.Library.Framework
         public IEnumerable<Task> GetTasks(User user) => throw new NotImplementedException();
 
         public IEnumerable<Task> GetTasks(Status status) => throw new NotImplementedException();
+
+        public int GetEstimatedDuration() => throw new NotImplementedException();
     }
 }
