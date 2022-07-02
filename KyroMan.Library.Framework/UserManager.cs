@@ -1,4 +1,6 @@
-﻿using System;
+﻿using KyroMan.Library.Framework.Model;
+using KyroMan.Library.Framework.Types;
+using System;
 using System.Collections.Generic;
 
 namespace KyroMan.Library.Framework

@@ -1,4 +1,4 @@
-﻿namespace KyroMan.Library.Framework
+﻿namespace KyroMan.Library.Framework.Types
 {
     public enum Status
     {

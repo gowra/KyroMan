@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace KyroMan.Library.Framework
+namespace KyroMan.Library.Framework.Model
 {
     public class Project : Entity
     {

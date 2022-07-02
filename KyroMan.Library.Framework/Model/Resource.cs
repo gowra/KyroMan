@@ -1,4 +1,4 @@
-﻿namespace KyroMan.Library.Framework
+﻿namespace KyroMan.Library.Framework.Model
 {
     public class Resource : Entity
     {
