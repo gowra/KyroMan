@@ -1,4 +1,5 @@
 ﻿using KyroMan.Library.Framework.Types;
+using System;
 using System.Collections.Generic;
 
 namespace KyroMan.Library.Framework.Model
@@ -37,5 +38,9 @@ namespace KyroMan.Library.Framework.Model
         public IEnumerable<Task> DependentTasks => dependentTasks;
 
         public Status Status { get; internal set; }
+
+        public void AddDependentTask(Task task) => throw new NotImplementedException();
+
+        public void RemoveDependentTask(Task task) => throw new NotImplementedException();
     }
 }

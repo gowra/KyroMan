@@ -34,6 +34,7 @@ namespace KryoMan.Library.Framework.Tests
             feature3.Estimate = 5;
             feature3.RequiredRole = Role.Tester;
             feature3.RequiredResource = resource1;
+            feature3.AddDependentTask(feature2);
 
             var installerTask = project.Tasks.CreateTask("Installer", "", manager);
             installerTask.Estimate = 3;
