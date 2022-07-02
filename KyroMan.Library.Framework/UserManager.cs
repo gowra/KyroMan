@@ -11,6 +11,7 @@ namespace KyroMan.Library.Framework
 
         internal UserManager()
         {
+            this.users = new HashSet<User>();
         }
 
         public IEnumerable<User> Users => users;

@@ -10,6 +10,7 @@ namespace KyroMan.Library.Framework
 
         internal TaskManager()
         {
+            this.tasks = new HashSet<Task>();
         }
 
         public IEnumerable<Task> Tasks => this.tasks;

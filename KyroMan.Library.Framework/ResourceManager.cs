@@ -10,6 +10,7 @@ namespace KyroMan.Library.Framework
 
         internal ResourceManager()
         {
+            this.resources = new HashSet<Resource>();
         }
 
         public IEnumerable<Resource> Resources => resources;

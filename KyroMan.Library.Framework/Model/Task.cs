@@ -16,6 +16,8 @@ namespace KyroMan.Library.Framework.Model
             Title = title;
             Description = description;
             CreatedBy = createdBy;
+
+            this.dependentTasks = new HashSet<Task>();
         }
 
         public string Title { get; set; }
