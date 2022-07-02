@@ -20,6 +20,8 @@ namespace KyroMan.Library.Framework
 
         public int DurationInDays { get; }
 
-        public TaskManager TaskManager { get; }
+        public TaskManager Tasks { get; }
+
+        public UserManager Users { get; }
     }
 }
