@@ -32,5 +32,7 @@ namespace KyroMan.Library.Framework
         public Resource RequiredResource { get; set; }
 
         public IEnumerable<Task> DependentTasks => this.dependentTasks;
+
+        public Status Status { get; internal set; }
     }
 }
