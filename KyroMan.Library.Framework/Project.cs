@@ -23,5 +23,7 @@ namespace KyroMan.Library.Framework
         public TaskManager Tasks { get; }
 
         public UserManager Users { get; }
+
+        public ResourceManager Resources { get; }
     }
 }
